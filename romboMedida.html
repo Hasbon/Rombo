@@ -1,0 +1,29 @@
+<script> 
+   
+    function rombo(n) {
+        var espacio = ''
+        var asterisco = '';
+        for (i=1;i<=n; i++){
+            espacio = ''
+            asterisco= asterisco + '* ' 
+            for (k=n; k>=i; k--){          
+                espacio = espacio +' '         
+            }
+            console.log(espacio+asterisco)    
+        }
+        // terminada la seccion inferior del rombo
+        var espacio1 = ''
+        for (i=2;i<=n; i++){
+            var asterisco1 = '';
+            espacio1 = espacio1 +' '   
+            for (k=n; k>=i; k--){
+                asterisco1 = asterisco1 + '* '            
+            }
+            console.log(espacio1+' '+asterisco1)    
+        }
+        }
+        n=prompt("ingrese el tamaño q desea en el rombo___-")
+
+        console.log(rombo(n));
+       
+</script>
